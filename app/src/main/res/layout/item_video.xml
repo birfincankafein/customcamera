@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/linearLayout_itemvideoroot"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="3"
+        android:id="@+id/imageView_thumbnail"
+        android:src="@drawable/ic_lens"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"/>
+
+    <android.widget.Space
+        android:layout_width="10dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_filenametitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="File Name:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_filename"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy File Name"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_filesizetitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="File Size:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_filesize"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy File Size"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_durationtitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="Duration:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_duration"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy Duration"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_rotationtitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="Rotation:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_rotation"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy Rotation"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_resolutiontitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="Resolution:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_resolution"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy Resolution"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_frameratetitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="Frame Rate:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_framerate"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy Frame Rate"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_bitratetitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="Bitrate:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_bitrate"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy Bitrate"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_mimetypetitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="Mime Type:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_mimetype"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy Mime Type"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_audiovideotitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="Audio/Video:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_audiovideo"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy Audio/Video"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CustomCameraDemo</string>
+    <string name="toast_permission">Permission required for this action</string>
+    <string name="toast_videosavefailed">Cannot save video file</string>
+    <string name="toast_picturesavefailed">Cannot picture video file</string>
+    <string name="message_progressrestore">Please wait, previous session is restoring...</string>
+</resources>

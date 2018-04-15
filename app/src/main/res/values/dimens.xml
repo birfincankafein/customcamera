@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textsize_title">12sp</dimen>
+    <dimen name="textsize_content">12sp</dimen>
+    <dimen name="dialog_padding_top">18dp</dimen>
+    <dimen name="dialog_padding">18dp</dimen>
+</resources>
