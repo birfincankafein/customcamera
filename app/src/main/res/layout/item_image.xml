@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/linearLayout_itemimageroot"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:id="@+id/imageView_thumbnail"
+        android:src="@drawable/ic_lens"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"/>
+
+    <android.widget.Space
+        android:layout_width="10dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_filenametitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="File Name:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_filename"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy File Name"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_filesizetitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="File Size:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_filesize"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy File Size"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_resolutiontitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="Resolution:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_resolution"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy Resolution"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_orientationtitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="Orientation:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_orientation"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy Orientation"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_cameraownernametitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="Owner:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_cameraownername"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy Owner Name"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_datetimetitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="DateTime:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_datetime"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy DateTime"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_takemodeltitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="Take/Model:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_takemodel"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy Take/Model"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_softwaretitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="Software:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_software"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy Software"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_fnumbertitle"
+                android:layout_weight="@integer/weight_title"
+                android:text="F Number:"
+                android:textSize="@dimen/textsize_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_fnumber"
+                android:layout_weight="@integer/weight_content"
+                android:text="dummy F Number"
+                android:textSize="@dimen/textsize_content"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="cc" path="CustomCameraDemo/" />
+    <external-path name="cc_external" path="Android/data/com.birfincankafein.customcamerademo/files/Captures/" />
+    <external-path name="cc_internal" path="/data/data/com.birfincankafein.customcamerademo/files/Captures/" />
+</paths>
