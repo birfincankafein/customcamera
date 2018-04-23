@@ -53,7 +53,7 @@ Features
 
 How to Use
 ------------
-You can use `CameraActivity.Builder` for setting up camera. You can set  image capture or video record, resolution, video recorder's maximum duration, video recorder's frame rate etc with Builder.
+You can use `CameraActivity.Builder` for setting up the camera. You can set  image capturing or video recording, resolution, video recorder's maximum duration, video recorder's frame rate etc with the Builder.
 
 * Video record example:
 ```java
