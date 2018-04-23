@@ -1,12 +1,12 @@
 
 [![Release](https://img.shields.io/badge/release-1.0.1-blue.svg?style=flat)](https://bintray.com/birfincankafein/com.birfincankafein/customcamera/_latestVersion)  [![API](https://img.shields.io/badge/API-16+-green.svg?style=flat)]()
-  
-What is  CustomCamera?  
-===================================  
-  
-CustomCamera is an Android library that provides support for Camera and  Camera2 API. It automatically selects API based on device. After Android API 21 (Lollipop) library uses [Camera2 API](https://developer.android.com/reference/android/hardware/camera2/package-summary.html  ), otherwise uses [Camera API](https://developer.android.com/guide/topics/media/camera.html).   
-This library includes codes from [android-Camera2Video](https://github.com/googlesamples/android-Camera2Video) and [android-Camera2Basic](https://github.com/googlesamples/android-Camera2Basic). The samples edited for supporting custom features like setting frame rate, setting resolution etc.  
-  
+
+What is  CustomCamera?
+===================================
+
+CustomCamera is an Android library that provides support for Camera and  Camera2 API. It automatically selects API based on device. After Android API 21 (Lollipop) library uses [Camera2 API](https://developer.android.com/reference/android/hardware/camera2/package-summary.html  ), otherwise uses [Camera API](https://developer.android.com/guide/topics/media/camera.html).
+This library includes codes from [android-Camera2Video](https://github.com/googlesamples/android-Camera2Video) and [android-Camera2Basic](https://github.com/googlesamples/android-Camera2Basic). The samples edited for supporting custom features like setting frame rate, setting resolution etc.
+
   Usage
 -----
 In order to use the library, there are 3 different options:
@@ -16,7 +16,7 @@ In order to use the library, there are 3 different options:
   -  Add this to your app `build.gradle`:
  ```gradle
 dependencies {
-	implementation 'com.birfincankafein:customcamera:1.0.0'
+	implementation 'com.birfincankafein:customcamera:1.0.1'
 }
 ```
 
@@ -26,14 +26,14 @@ dependencies {
 <dependency>
         <groupId>com.birfincankafein</groupId>
         <artifactId>customcamera</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
 </dependency>
 ```
 
 **3. Ivy**
 - Add the following to the `<dependencies>` section of your `ivy.xml`:
 ```xml
-<dependency org='com.birfincankafein' name='customcamera' rev='1.0.0'> <artifact name='customcamera' ext='pom' /> </dependency>
+<dependency org='com.birfincankafein' name='customcamera' rev='1.0.1'> <artifact name='customcamera' ext='pom' /> </dependency>
 ```
 
 Features  
