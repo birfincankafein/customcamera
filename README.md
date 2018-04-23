@@ -36,28 +36,28 @@ dependencies {
 <dependency org='com.birfincankafein' name='customcamera' rev='1.0.1'> <artifact name='customcamera' ext='pom' /> </dependency>
 ```
 
-Features  
---------  
-- Automatic Camera API selection.  
-- Permission handling. No need to check CAMERA and RECORD_AUDIO permissions.  
-- Rotation handling.  
-- Result screen support. User can recapture or confirm the captured media.  
-- Supports Android API >= 16  
-- Configuration by attributes  
-  - Save File  
-  - Resolution  
-  - Front Camera Access  
-  - Frame Rate for Video  
-  - Video Encoding BitRate  
-  - Max Video Duration  
-  
-How to Use  
-------------  
+Features
+--------
+- Automatic Camera API selection.
+- Permission handling. No need to check CAMERA and RECORD_AUDIO permissions.
+- Rotation handling.
+- Result screen support. User can recapture or confirm the captured media.
+- Supports Android API >= 16
+- Configuration by attributes
+  - Save File
+  - Resolution
+  - Front Camera Access
+  - Frame Rate for Video
+  - Video Encoding BitRate
+  - Max Video Duration
+
+How to Use
+------------
 You can use `CameraActivity.Builder` for setting up camera. You can set  image capture or video record, resolution, video recorder's maximum duration, video recorder's frame rate etc with Builder.
 
 * Video record example:
 ```java
- // Start video recorder. 
+ // Start video recorder.
  Intent videoIntent = new CameraActivity.Builder(mContext)
     .setActionType(CameraActivity.Type.VIDEO)
     .setSaveFileUri(mPendingMediaUri)
@@ -66,28 +66,29 @@ You can use `CameraActivity.Builder` for setting up camera. You can set  image c
     .setFrameRate(30)
     .setMaxVideoDuration(15000)
     .setVideoEncodingBitRate(10000000)
-    .build(); 
-startActivityForResult(videoIntent, ACTIVITY_REQUESTCODEVIDEO);  
+    .build();
+startActivityForResult(videoIntent, ACTIVITY_REQUESTCODEVIDEO);
 
-// Handle video recorder response 
-@Override protected void onActivityResult(int requestCode, int resultCode, Intent data) { 
-    switch (requestCode){ 
-	    ... 
-	    case ACTIVITY_REQUESTCODEVIDEO: 
-	        if(resultCode == RESULT_OK) { 
-	            Bundle bundle = data.getExtras(); 
-	            if (bundle != null) { 
-	                Uri fileUri = bundle.getParcelable(CameraActivity.EXTRA_FILE_URI); 
-	                ... 
-	            } 
-	        } 
-	        else { 
-	            Toast.makeText(this, "Canceled", Toast.LENGTH_SHORT).show();  
-	            } 
-	        break; 
-	    ... 
-	    } 
+// Handle video recorder response
+@Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    switch (requestCode){
+	    ...
+	    case ACTIVITY_REQUESTCODEVIDEO:
+	        if(resultCode == RESULT_OK) {
+	            Bundle bundle = data.getExtras();
+	            if (bundle != null) {
+	                Uri fileUri = bundle.getParcelable(CameraActivity.EXTRA_FILE_URI);
+	                ...
+	            }
+	        }
+	        else {
+	            Toast.makeText(this, "Canceled", Toast.LENGTH_SHORT).show();
+	            }
+	        break;
+	    ...
+	    }
 }
+```
 * Image capture example:
 ```java
  // Start image capture. 
